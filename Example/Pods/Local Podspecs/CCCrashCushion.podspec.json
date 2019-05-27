@@ -1,0 +1,22 @@
+{
+  "name": "CCCrashCushion",
+  "version": "0.1.0",
+  "summary": "A short description of CCCrashCushion.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ccrsno1/CCCrashCushion",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ccrsno1": "qinxu@ingtube.com"
+  },
+  "source": {
+    "git": "https://github.com/ccrsno1/CCCrashCushion.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CCCrashCushion/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module CCCrashCushion {
+  umbrella header "CCCrashCushion-umbrella.h"
+
+  export *
+  module * { export * }
+}

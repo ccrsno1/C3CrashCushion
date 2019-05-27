@@ -1,0 +1,16 @@
+PODS:
+  - CCCrashCushion (0.1.0)
+
+DEPENDENCIES:
+  - CCCrashCushion (from `../`)
+
+EXTERNAL SOURCES:
+  CCCrashCushion:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CCCrashCushion: b35d02436dbcab48db3bf3e7df9165c8be18a9fb
+
+PODFILE CHECKSUM: d0fc02358b899ac80dea8baccee7d2b58955f78f
+
+COCOAPODS: 1.5.3
