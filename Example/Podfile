@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'CCCrashCushion_Example' do
+  pod 'CCCrashCushion', :path => '../'
+
+  target 'CCCrashCushion_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
