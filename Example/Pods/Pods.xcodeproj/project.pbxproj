@@ -9,14 +9,17 @@
 /* Begin PBXBuildFile section */
 		106B14306DBEB8BEF880B3603623AE70 /* Pods-CCCrashCushion_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7861D0A445B1869A234E412EB1DA147 /* Pods-CCCrashCushion_Tests-dummy.m */; };
 		1882483E1CEB4FE01A7A7E8E1C75275A /* Pods-CCCrashCushion_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B6CD2DE0F3F8BCAA4C3B96DA1ED83A /* Pods-CCCrashCushion_Example-dummy.m */; };
-		477B92240191C12DAC2022325C1EF9C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		4529027C5300DA4A113E382E12F94E48 /* NSArray+CCSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD881D281DD3442BA00E45BCE83722A /* NSArray+CCSwizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E20B4567FF1615F5426CB75216D678A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		C4D3F96A3F73EDCBA13690BBDAB65863 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F90AE92AAB444E09BF4F8D412BADC59 /* ReplaceMe.m */; };
+		605C213786F83C0179419CD90AD27539 /* NSObject+CCSwizzleCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3931330E6877BA054D4FF03FC14E398F /* NSObject+CCSwizzleCore.m */; };
+		6C0986A80D6D4D047D8210ED095DA1DB /* NSArray+CCSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = A74BC7CDB4211A1526E80B7015277A88 /* NSArray+CCSwizzle.m */; };
+		8B32B604D9D48C7E7B79961A1165A82D /* CCCrashCushion-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7662019025B6321D0068AA799152909D /* CCCrashCushion-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A28E9CD373A8209096D6DD1F0E64300A /* CCCrashCushion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7E491087313D422D861B41EA9CA42 /* CCCrashCushion-dummy.m */; };
+		B3211B7AE9A045EDD02C53EF2C3C29FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		E270A85C7EBF6316E94E9080C9081469 /* Pods-CCCrashCushion_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B0D0CC0E95E6442C2DCA7F5585F2F47 /* Pods-CCCrashCushion_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE034B4462E70010DE2D3BF738E69391 /* CCCrashCushion-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2DD2B10847C8741B306C9C61C21DDA4 /* CCCrashCushion-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBBB8E12D0DB5AC61F5D2D742DAACA28 /* NSObject+CCSwizzleCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 818815101E50786755848D730573B1D3 /* NSObject+CCSwizzleCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA870A908745B8D08E5A732DE3829926 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		FF2C8CF62CCB216EE8C86F3533C342E4 /* Pods-CCCrashCushion_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74925051292D6F1048B8175F1FC90839 /* Pods-CCCrashCushion_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFC69EC752F41FA2C048A67B6449DD95 /* CCCrashCushion-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D639C874BF7E941F87FA4667E4808727 /* CCCrashCushion-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +27,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 854F5E093EABD422A0C032509D271D7F;
+			remoteGlobalIDString = 8F25C2C5B68175688F29CA15BD9FE1E5;
 			remoteInfo = CCCrashCushion;
 		};
 		924AB8490487F42505A32600F730E66D /* PBXContainerItemProxy */ = {
@@ -37,39 +40,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00697F7595CB324D6590936E3608D88E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		15E69704426E5268EC08DB61D7E088B8 /* Pods-CCCrashCushion_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CCCrashCushion_Example.modulemap"; sourceTree = "<group>"; };
-		16692D8493C728E3091239C214CFF120 /* CCCrashCushion.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CCCrashCushion.xcconfig; sourceTree = "<group>"; };
 		223313C07C7169B103A826532406A931 /* Pods_CCCrashCushion_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CCCrashCushion_Example.framework; path = "Pods-CCCrashCushion_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26AEF929196EBE572B8D806E399F8E26 /* Pods_CCCrashCushion_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CCCrashCushion_Tests.framework; path = "Pods-CCCrashCushion_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A062DB3327466175A51392529E29CA4 /* Pods-CCCrashCushion_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CCCrashCushion_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E2B6362FBF7B35091A07AD2757D3616 /* Pods-CCCrashCushion_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CCCrashCushion_Tests.modulemap"; sourceTree = "<group>"; };
-		331F874D8B412800DC0B687637E585CC /* CCCrashCushion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CCCrashCushion.modulemap; sourceTree = "<group>"; };
-		378B91CFB689AB4B0814230384CD0302 /* CCCrashCushion-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCCrashCushion-prefix.pch"; sourceTree = "<group>"; };
+		3931330E6877BA054D4FF03FC14E398F /* NSObject+CCSwizzleCore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+CCSwizzleCore.m"; path = "CCCrashCushion/Classes/NSObject+CCSwizzleCore.m"; sourceTree = "<group>"; };
 		40A98D93D6250C78C6EABA934F4670E7 /* Pods-CCCrashCushion_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CCCrashCushion_Example-frameworks.sh"; sourceTree = "<group>"; };
 		4C92D0F9C5767C9ACD0D198BE1EF93FA /* Pods-CCCrashCushion_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CCCrashCushion_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		5437AA599FDB5454FF335B804AB9E679 /* Pods-CCCrashCushion_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CCCrashCushion_Example-resources.sh"; sourceTree = "<group>"; };
+		5514845E2382B704682AC9F4AABD6E22 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5B0D0CC0E95E6442C2DCA7F5585F2F47 /* Pods-CCCrashCushion_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CCCrashCushion_Example-umbrella.h"; sourceTree = "<group>"; };
-		5F90AE92AAB444E09BF4F8D412BADC59 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = CCCrashCushion/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		5E9E54ECE34C9358C6E6118CF983C4B5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6312DD1304B658E5C387BFC33C2EBB65 /* CCCrashCushion-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCCrashCushion-prefix.pch"; sourceTree = "<group>"; };
 		74925051292D6F1048B8175F1FC90839 /* Pods-CCCrashCushion_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CCCrashCushion_Tests-umbrella.h"; sourceTree = "<group>"; };
+		7662019025B6321D0068AA799152909D /* CCCrashCushion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCCrashCushion-umbrella.h"; sourceTree = "<group>"; };
 		78B6CD2DE0F3F8BCAA4C3B96DA1ED83A /* Pods-CCCrashCushion_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CCCrashCushion_Example-dummy.m"; sourceTree = "<group>"; };
 		7A517F3BB3D4F54A53023A8EA34539E2 /* Pods-CCCrashCushion_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CCCrashCushion_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		818815101E50786755848D730573B1D3 /* NSObject+CCSwizzleCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+CCSwizzleCore.h"; path = "CCCrashCushion/Classes/NSObject+CCSwizzleCore.h"; sourceTree = "<group>"; };
 		84E96B5363917E157B6D3A9EE3EBF29B /* Pods-CCCrashCushion_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CCCrashCushion_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		85B1BE29F7F25779C0CAD7533AD5C8E4 /* CCCrashCushion.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = CCCrashCushion.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8CBC7A351B929BAC52DB8425E0728C9B /* Pods-CCCrashCushion_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CCCrashCushion_Tests-resources.sh"; sourceTree = "<group>"; };
+		8DD7E491087313D422D861B41EA9CA42 /* CCCrashCushion-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CCCrashCushion-dummy.m"; sourceTree = "<group>"; };
+		8FC4306129298C7964D4D799AE159882 /* CCCrashCushion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CCCrashCushion.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B5823CEDDD7E731970583F48BF926FE /* CCCrashCushion.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CCCrashCushion.xcconfig; sourceTree = "<group>"; };
+		A294051782371C81156127D55741FC56 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5C0F2C7573FA732C3456ACC9474BAC9 /* Pods-CCCrashCushion_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CCCrashCushion_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A74BC7CDB4211A1526E80B7015277A88 /* NSArray+CCSwizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+CCSwizzle.m"; path = "CCCrashCushion/Classes/NSArray+CCSwizzle.m"; sourceTree = "<group>"; };
 		BE643232B0893EE4155CED476CDD8A3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBD881D281DD3442BA00E45BCE83722A /* NSArray+CCSwizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+CCSwizzle.h"; path = "CCCrashCushion/Classes/NSArray+CCSwizzle.h"; sourceTree = "<group>"; };
 		CCFBFE4DF8E876CFA28AA475FC7BBBD0 /* Pods-CCCrashCushion_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CCCrashCushion_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D639C874BF7E941F87FA4667E4808727 /* CCCrashCushion-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CCCrashCushion-dummy.m"; sourceTree = "<group>"; };
 		D7861D0A445B1869A234E412EB1DA147 /* Pods-CCCrashCushion_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CCCrashCushion_Tests-dummy.m"; sourceTree = "<group>"; };
 		D78BCA82E8F55579E644A4713C2BA612 /* CCCrashCushion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CCCrashCushion.framework; path = CCCrashCushion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7679B2FC2723A727B35D3D8918D939 /* Pods-CCCrashCushion_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CCCrashCushion_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E1526991C91C45BBBDE773F0B5EE523E /* Pods-CCCrashCushion_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CCCrashCushion_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E91750E0B6BD705BDA30D3243BF3F488 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2094FFE6DE43A7B2D5F1E276EF07604 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		F2DD2B10847C8741B306C9C61C21DDA4 /* CCCrashCushion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CCCrashCushion-umbrella.h"; sourceTree = "<group>"; };
-		F334177F8CF3CBB2A575E534F0097B25 /* CCCrashCushion.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = CCCrashCushion.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F95C68AE30C7FD4CFE253398A8C3145F /* Pods-CCCrashCushion_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CCCrashCushion_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		FDAE69ED0DB08103616BBC34E9F0D160 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,56 +97,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E520492DA6E9850804D66F27C8EB5EFC /* Frameworks */ = {
+		86E4467FA00FF2B66533EC37D7CEC453 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				477B92240191C12DAC2022325C1EF9C0 /* Foundation.framework in Frameworks */,
+				B3211B7AE9A045EDD02C53EF2C3C29FF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06EE9AC7FEB00861C0819EE9B954E6DE /* CCCrashCushion */ = {
-			isa = PBXGroup;
-			children = (
-				5F90AE92AAB444E09BF4F8D412BADC59 /* ReplaceMe.m */,
-				A17E0B6DE08138DB28B9F5F226B388D2 /* Pod */,
-				5C687506E3E1437E2EF9AD99E5AAA118 /* Support Files */,
-			);
-			name = CCCrashCushion;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		118EE18CBF02D2CF69825FB1859ED214 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				06EE9AC7FEB00861C0819EE9B954E6DE /* CCCrashCushion */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		5C687506E3E1437E2EF9AD99E5AAA118 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				331F874D8B412800DC0B687637E585CC /* CCCrashCushion.modulemap */,
-				16692D8493C728E3091239C214CFF120 /* CCCrashCushion.xcconfig */,
-				D639C874BF7E941F87FA4667E4808727 /* CCCrashCushion-dummy.m */,
-				378B91CFB689AB4B0814230384CD0302 /* CCCrashCushion-prefix.pch */,
-				F2DD2B10847C8741B306C9C61C21DDA4 /* CCCrashCushion-umbrella.h */,
-				E91750E0B6BD705BDA30D3243BF3F488 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/CCCrashCushion";
-			sourceTree = "<group>";
-		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		682E9190A32239F001ABF9C787CCCB9D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7B877A180F10C0EFCEF891CFAAF7F91 /* CCCrashCushion */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		7D1073DE299FD1D095368905BB531B04 /* Products */ = {
@@ -157,7 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				118EE18CBF02D2CF69825FB1859ED214 /* Development Pods */,
+				682E9190A32239F001ABF9C787CCCB9D /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				7D1073DE299FD1D095368905BB531B04 /* Products */,
 				ED934E28FEF6ED7CB1865DD1A2A3B237 /* Targets Support Files */,
@@ -182,14 +163,32 @@
 			path = "Target Support Files/Pods-CCCrashCushion_Tests";
 			sourceTree = "<group>";
 		};
-		A17E0B6DE08138DB28B9F5F226B388D2 /* Pod */ = {
+		A7B877A180F10C0EFCEF891CFAAF7F91 /* CCCrashCushion */ = {
 			isa = PBXGroup;
 			children = (
-				F334177F8CF3CBB2A575E534F0097B25 /* CCCrashCushion.podspec */,
-				F2094FFE6DE43A7B2D5F1E276EF07604 /* LICENSE */,
-				00697F7595CB324D6590936E3608D88E /* README.md */,
+				CBD881D281DD3442BA00E45BCE83722A /* NSArray+CCSwizzle.h */,
+				A74BC7CDB4211A1526E80B7015277A88 /* NSArray+CCSwizzle.m */,
+				818815101E50786755848D730573B1D3 /* NSObject+CCSwizzleCore.h */,
+				3931330E6877BA054D4FF03FC14E398F /* NSObject+CCSwizzleCore.m */,
+				C2BB726806184D277DD0A11AA5F7170A /* Pod */,
+				B39F8DFC5C5434302B39A03CCB545E0B /* Support Files */,
 			);
-			name = Pod;
+			name = CCCrashCushion;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B39F8DFC5C5434302B39A03CCB545E0B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FC4306129298C7964D4D799AE159882 /* CCCrashCushion.modulemap */,
+				9B5823CEDDD7E731970583F48BF926FE /* CCCrashCushion.xcconfig */,
+				8DD7E491087313D422D861B41EA9CA42 /* CCCrashCushion-dummy.m */,
+				6312DD1304B658E5C387BFC33C2EBB65 /* CCCrashCushion-prefix.pch */,
+				7662019025B6321D0068AA799152909D /* CCCrashCushion-umbrella.h */,
+				A294051782371C81156127D55741FC56 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CCCrashCushion";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -198,6 +197,16 @@
 				5E0D919E635D23B70123790B8308F8EF /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2BB726806184D277DD0A11AA5F7170A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				85B1BE29F7F25779C0CAD7533AD5C8E4 /* CCCrashCushion.podspec */,
+				5E9E54ECE34C9358C6E6118CF983C4B5 /* LICENSE */,
+				5514845E2382B704682AC9F4AABD6E22 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		DF2322239A362809228487866F11C888 /* Pods-CCCrashCushion_Example */ = {
@@ -230,14 +239,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5308FF6E8921CE62E8E058129B565784 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EE034B4462E70010DE2D3BF738E69391 /* CCCrashCushion-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5FC82AE845078971C95BA63A869E618B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,6 +252,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF2C8CF62CCB216EE8C86F3533C342E4 /* Pods-CCCrashCushion_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B34352B2FEAFAECE0599114D54A639F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B32B604D9D48C7E7B79961A1165A82D /* CCCrashCushion-umbrella.h in Headers */,
+				4529027C5300DA4A113E382E12F94E48 /* NSArray+CCSwizzle.h in Headers */,
+				EBBB8E12D0DB5AC61F5D2D742DAACA28 /* NSObject+CCSwizzleCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,14 +287,14 @@
 			productReference = 26AEF929196EBE572B8D806E399F8E26 /* Pods_CCCrashCushion_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		854F5E093EABD422A0C032509D271D7F /* CCCrashCushion */ = {
+		8F25C2C5B68175688F29CA15BD9FE1E5 /* CCCrashCushion */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4DDC71C0157BAA8CA892A9FE9F5B9502 /* Build configuration list for PBXNativeTarget "CCCrashCushion" */;
+			buildConfigurationList = 4741CEF37DE0AE6F2C672B09899C35AF /* Build configuration list for PBXNativeTarget "CCCrashCushion" */;
 			buildPhases = (
-				5308FF6E8921CE62E8E058129B565784 /* Headers */,
-				DDB233ED6C85EB65BFA2776870A540F6 /* Sources */,
-				E520492DA6E9850804D66F27C8EB5EFC /* Frameworks */,
-				67E09F240AD08A81C3041A66DA14C669 /* Resources */,
+				9B34352B2FEAFAECE0599114D54A639F /* Headers */,
+				0C12A2F8B726852EC3CAE830FEF7A17B /* Sources */,
+				86E4467FA00FF2B66533EC37D7CEC453 /* Frameworks */,
+				D2C7A5D002BFB25185AF2CFFCCE5BFF0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -334,7 +345,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				854F5E093EABD422A0C032509D271D7F /* CCCrashCushion */,
+				8F25C2C5B68175688F29CA15BD9FE1E5 /* CCCrashCushion */,
 				B01C558AA1BC63B320D9CCECEEFB2C62 /* Pods-CCCrashCushion_Example */,
 				66BAC7F5EA4A2D1C0FE5F24027F731F6 /* Pods-CCCrashCushion_Tests */,
 			);
@@ -349,7 +360,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		67E09F240AD08A81C3041A66DA14C669 /* Resources */ = {
+		D2C7A5D002BFB25185AF2CFFCCE5BFF0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -366,6 +377,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0C12A2F8B726852EC3CAE830FEF7A17B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A28E9CD373A8209096D6DD1F0E64300A /* CCCrashCushion-dummy.m in Sources */,
+				6C0986A80D6D4D047D8210ED095DA1DB /* NSArray+CCSwizzle.m in Sources */,
+				605C213786F83C0179419CD90AD27539 /* NSObject+CCSwizzleCore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A46B6A3CF9932DA4CD0313C63F9655F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,22 +403,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDB233ED6C85EB65BFA2776870A540F6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FFC69EC752F41FA2C048A67B6449DD95 /* CCCrashCushion-dummy.m in Sources */,
-				C4D3F96A3F73EDCBA13690BBDAB65863 /* ReplaceMe.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		68375E7EF117AAE51841E29933C8DECB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CCCrashCushion;
-			target = 854F5E093EABD422A0C032509D271D7F /* CCCrashCushion */;
+			target = 8F25C2C5B68175688F29CA15BD9FE1E5 /* CCCrashCushion */;
 			targetProxy = 631AB9BDCCD750B15DB4701A656FAECA /* PBXContainerItemProxy */;
 		};
 		99153E12846B62CF716F18CDFC6BA613 /* PBXTargetDependency */ = {
@@ -409,37 +421,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		05AD814A3E9B18BB4747C055140C4C59 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16692D8493C728E3091239C214CFF120 /* CCCrashCushion.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CCCrashCushion/CCCrashCushion-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CCCrashCushion/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CCCrashCushion/CCCrashCushion.modulemap";
-				PRODUCT_MODULE_NAME = CCCrashCushion;
-				PRODUCT_NAME = CCCrashCushion;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		1901831556BCC7D59C692D8E94BF5EF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2A062DB3327466175A51392529E29CA4 /* Pods-CCCrashCushion_Tests.debug.xcconfig */;
@@ -472,6 +453,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		35E8A75BA7C7D73CB2D0FB1A8B185E16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B5823CEDDD7E731970583F48BF926FE /* CCCrashCushion.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CCCrashCushion/CCCrashCushion-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CCCrashCushion/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CCCrashCushion/CCCrashCushion.modulemap";
+				PRODUCT_MODULE_NAME = CCCrashCushion;
+				PRODUCT_NAME = CCCrashCushion;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		96434B6C8FF320C976A10DAD7174A4BB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -565,6 +577,36 @@
 			};
 			name = Debug;
 		};
+		D0296AC892551D851875D3C52FE077AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B5823CEDDD7E731970583F48BF926FE /* CCCrashCushion.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CCCrashCushion/CCCrashCushion-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CCCrashCushion/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CCCrashCushion/CCCrashCushion.modulemap";
+				PRODUCT_MODULE_NAME = CCCrashCushion;
+				PRODUCT_NAME = CCCrashCushion;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		D11C82AF2204B41B80412B8DC9C1D652 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -626,36 +668,6 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		D8306035ED48286AA26ADC270614C59B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16692D8493C728E3091239C214CFF120 /* CCCrashCushion.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CCCrashCushion/CCCrashCushion-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CCCrashCushion/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CCCrashCushion/CCCrashCushion.modulemap";
-				PRODUCT_MODULE_NAME = CCCrashCushion;
-				PRODUCT_NAME = CCCrashCushion;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -748,11 +760,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4DDC71C0157BAA8CA892A9FE9F5B9502 /* Build configuration list for PBXNativeTarget "CCCrashCushion" */ = {
+		4741CEF37DE0AE6F2C672B09899C35AF /* Build configuration list for PBXNativeTarget "CCCrashCushion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D8306035ED48286AA26ADC270614C59B /* Debug */,
-				05AD814A3E9B18BB4747C055140C4C59 /* Release */,
+				D0296AC892551D851875D3C52FE077AD /* Debug */,
+				35E8A75BA7C7D73CB2D0FB1A8B185E16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		4D0B244432563F343BF91B0A /* Pods-CCCrashCushion_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCCrashCushion_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCCrashCushion_Tests/Pods-CCCrashCushion_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4F79DB5DF3EF3FEDA990941B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4F79DB5DF3EF3FEDA990941B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		575B3F3667E7FD7D5902504C /* Pods_CCCrashCushion_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCCrashCushion_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* CCCrashCushion_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCCrashCushion_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,10 +62,10 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7456DFB41CAB0B06AB82564C /* Pods-CCCrashCushion_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCCrashCushion_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCCrashCushion_Example/Pods-CCCrashCushion_Example.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		957A77024BA81B328E7A6FBA /* CCCrashCushion.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CCCrashCushion.podspec; path = ../CCCrashCushion.podspec; sourceTree = "<group>"; };
+		957A77024BA81B328E7A6FBA /* CCCrashCushion.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CCCrashCushion.podspec; path = ../CCCrashCushion.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DD84CA34017B19B05B7E9700 /* Pods-CCCrashCushion_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCCrashCushion_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCCrashCushion_Example/Pods-CCCrashCushion_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E053D99558F377FC2F4F1D01 /* Pods_CCCrashCushion_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCCrashCushion_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0E9B0F8FB0C5548238FE927 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E0E9B0F8FB0C5548238FE927 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		ED8693EC428DB7FAA5FC98EC /* Pods-CCCrashCushion_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCCrashCushion_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCCrashCushion_Tests/Pods-CCCrashCushion_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,7 +207,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				79CBE933EC9B1ABB187F2721 /* [CP] Embed Pods Frameworks */,
+				B5FA97D9466B88442D521CCE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = ccrsno1;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = VM5K62X8F7;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -257,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -316,7 +320,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		79CBE933EC9B1ABB187F2721 /* [CP] Embed Pods Frameworks */ = {
+		B5FA97D9466B88442D521CCE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -497,6 +501,7 @@
 			baseConfigurationReference = DD84CA34017B19B05B7E9700 /* Pods-CCCrashCushion_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VM5K62X8F7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CCCrashCushion/CCCrashCushion-Prefix.pch";
 				INFOPLIST_FILE = "CCCrashCushion/CCCrashCushion-Info.plist";
@@ -512,6 +517,7 @@
 			baseConfigurationReference = 7456DFB41CAB0B06AB82564C /* Pods-CCCrashCushion_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VM5K62X8F7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CCCrashCushion/CCCrashCushion-Prefix.pch";
 				INFOPLIST_FILE = "CCCrashCushion/CCCrashCushion-Info.plist";

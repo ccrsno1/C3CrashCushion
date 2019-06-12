@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "NSArray+CCSwizzle.h"
+#import "NSObject+CCSwizzleCore.h"
 
 FOUNDATION_EXPORT double CCCrashCushionVersionNumber;
 FOUNDATION_EXPORT const unsigned char CCCrashCushionVersionString[];

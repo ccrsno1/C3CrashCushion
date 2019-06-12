@@ -7,6 +7,7 @@
 //
 
 #import "CCCrashViewController.h"
+#import <CCCrashCushion/NSArray+CCSwizzle.h>
 
 @interface CCCrashViewController ()
 
@@ -18,6 +19,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSArray* array = @[];
+    NSLog(@"%@", array[100]);
+    
+    NSArray* nonEmptyArray = @[@"",@""];
+    NSLog(@"%@", nonEmptyArray[100]);
 }
 
 - (void)didReceiveMemoryWarning
