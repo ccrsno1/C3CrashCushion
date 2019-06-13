@@ -24,6 +24,10 @@
     
     NSArray* nonEmptyArray = @[@"",@""];
     NSLog(@"%@", nonEmptyArray[100]);
+    
+    NSArray* singleArray = @[@""];
+    NSLog(@"%@", singleArray[100]);
+
 }
 
 - (void)didReceiveMemoryWarning

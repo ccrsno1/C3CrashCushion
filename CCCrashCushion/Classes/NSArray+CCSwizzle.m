@@ -37,6 +37,13 @@
     return [self safe_objectAtIndexedSubscript:index];
 }
 
+- (id)safe_singleObjectAtIndex:(NSUInteger)index {
+    if (index >= [self count]) {
+        return nil;
+    }
+    return [self safe_singleObjectAtIndex:index];
+}
+
 - (id)safe_objectAtIndexForNSArray0:(NSUInteger)index {
     if (index >= [self count]) {
         return nil;
@@ -70,6 +77,19 @@
             method_exchangeImplementations(arrayIClassMethod, selfClassObjectAtMethod);
         }
         
+        Method arrayIClassIndexMethod = class_getInstanceMethod(arrayIClass, @selector(objectAtIndexedSubscript:));
+        Method selfClassObjectAtIndexMethod = class_getInstanceMethod(selfClass, @selector(safe_objectAtIndexedSubscript:));
+        if (arrayIClass && selfClass && arrayIClassIndexMethod && selfClassObjectAtIndexMethod) {
+            method_exchangeImplementations(arrayIClassIndexMethod, selfClassObjectAtIndexMethod);
+        }
+        
+        Class singleArrayIClass = NSClassFromString(@"__NSSingleObjectArrayI");
+        Method singleArrayIClassMethod = class_getInstanceMethod(singleArrayIClass, @selector(objectAtIndex:));
+        Method selfClassSingleObjectAtMethod = class_getInstanceMethod(selfClass, @selector(safe_singleObjectAtIndex:));
+        if (singleArrayIClass && selfClass && singleArrayIClassMethod && selfClassSingleObjectAtMethod) {
+            method_exchangeImplementations(singleArrayIClassMethod, selfClassSingleObjectAtMethod);
+        }
+
         Class array0Class = NSClassFromString(@"__NSArray0");
         Method array0ClassMethod = class_getInstanceMethod(array0Class, @selector(objectAtIndex:));
         Method selfClassObjectAtForArray0Method = class_getInstanceMethod(selfClass, @selector(safe_objectAtIndexForNSArray0:));
