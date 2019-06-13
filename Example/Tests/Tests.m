@@ -7,6 +7,7 @@
 //
 
 @import XCTest;
+#import <CCCrashCushion/NSArray+CCSwizzle.h>
 
 @interface Tests : XCTestCase
 
@@ -28,7 +29,15 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    NSArray* array = @[];
+    NSLog(@"%@", array[100]);
+    
+    NSArray* nonEmptyArray = @[@"",@""];
+    NSLog(@"%@", nonEmptyArray[100]);
+    
+    NSArray* singleArray = @[@""];
+    NSLog(@"%@", singleArray[100]);
+
 }
 
 @end
